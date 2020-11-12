@@ -1,0 +1,23 @@
+3 print
+4 print
+-587 print
+3009 print
+drop print
+swap print
+swap swap print
+dup print drop print
+clear print
+#t print
+#f print
+not print
+not not print
+drop print
+{ 5 } print
+{ 5 { 6 7 + } } print
+{
+78 quit
+} print
+7.7
+()()()()
+{5}
+quit

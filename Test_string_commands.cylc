@@ -1,0 +1,16 @@
+{ 5 } print
+{ 5 { 6 7 + } } print
+{
+78
+} print
+exec print
+drop exec exec print
+5 { fact.cylc } file print
+{ test_commands.cylc } file print
+#t { 3 } { 4 } if print
+#f { #t } { #f } if print
+#f { 3 4 + } { 3 4 > } if print
+3 4 > { 0 } { #t { 4  5 + } { #t } if } if
+print
+{ quit }
+exec

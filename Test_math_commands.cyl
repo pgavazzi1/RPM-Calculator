@@ -1,0 +1,37 @@
+%%%
+%%% Test_math_commands
+%%%
+%%% Test math related commands to pipe into the RPNcalculator and see if
+%%% they work. Can diff against demo program to see if our program is behaving
+%%% correctly
+%%%
+%%% Author:  Patrick Gavazzi (pgavaz01), Tufts University, spring 2020
+%%%
+
+3 4 + print           % testing adding, should sprint out 7
+5 6 - print           % testing subtracting, should print out -1
++ print               % should print out 6
+20 5 mod print        % testing mod, should print out 0
+5 20 mod print        % should print out 15
+4 5 * print           % testing times, should print out 20
+3 7 * print           % should print out 21
+* print               % should print out 420
+clear + mod * / -     % testing errors, but should keep running
+8 4 / print           % testing divides, should print out 2
+100 40 / print        % should print out 2
+-40 80 * print        % testing negatives, should print out -3200
+
+14912742579632954632975672653475623972365723  % should print out error
+
+
+                      % testing comparing operations
+10 4 > print          % should print out #t
+367 400 < print       % should print out #f
+30 30 <= print        % should print out #t
+30 30 >= print        % should print out #t
+45 30 <= print        % should print out #f
+== print              % should print out #f
+#t #t == print        % should print out #t
+{ 4 } { 4 } == print  % should print out #t
+
+quit

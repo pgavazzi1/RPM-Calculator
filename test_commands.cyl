@@ -1,0 +1,13 @@
+%%%
+%%% Sample Commands 1
+%%%
+%%% Test commands to pipe into the RPNcalculator and see if they work.
+%%% Can diff against demo program to see if our program is behaving
+%%% correctly
+%%%
+%%% Author:  Patrick Gavazzi (pgavaz01), Tufts University, spring 2020
+%%%
+
+1 0               % add 1 and 0 to the stack
+print             % print out 0
+3 4 + print       % print out 7      

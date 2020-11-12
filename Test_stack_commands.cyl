@@ -1,0 +1,45 @@
+%%%
+%%% Test_stack_commands
+%%%
+%%% Test stack related commands to pipe into the RPNcalculator and see if
+%%% they work. Can diff against demo program to see if our program is behaving
+%%% correctly
+%%%
+%%% Author:  Patrick Gavazzi (pgavaz01), Tufts University, spring 2020
+%%%
+
+                  % testing adding numbers to stack
+3 print           % print out 3
+4 print           % print out 4
+-587 print        % print out -587
+3009 print        % print out 33009
+
+                       % testing special stack commands
+drop print             % print out -587
+swap print             % print out 4
+swap swap print        % print out 4
+dup print drop print   % print out 4 then 4 again
+clear print            % print out empty_stack error
+
+                   % testing adding bools to stack
+#t print           % print out #t
+#f print           % print out #f
+not print          % print out #t
+not not print      % print out #t
+drop print         % print out #t
+
+
+                        % testing adding rstrings to stack
+{ 5 } print             % print out { 5 }
+{ 5 { 6 7 + } } print   % print out { 5 { 6 7 + } }
+{
+78 quit
+} print                 % print out { 78 quit }
+
+                 % testing invalid commands
+7.7              % print out unimplemented
+%vhvfhw$         % print out unimplemented
+()()()()         % print out unimplemented
+{5}              % print out unimplementeds
+
+quit             % print out quit statement

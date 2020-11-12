@@ -1,0 +1,35 @@
+%%%
+%%% Test_string_commands
+%%%
+%%% Test string related commands to pipe into the RPNcalculator and see if
+%%% they work. Can diff against demo program to see if our program is behaving
+%%% correctly
+%%%
+%%% Author:  Patrick Gavazzi (pgavaz01), Tufts University, spring 2020
+%%%
+                        % testing adding rstrings to stack
+{ 5 } print             % print out { 5 }
+{ 5 { 6 7 + } } print   % print out { 5 { 6 7 + } }
+{
+78
+} print                 % print out { 78 }
+
+                       % testing executing r strings
+exec print             % print out 78
+drop exec exec print   % print out 13
+
+
+                                   % testing reading from a file
+5 { fact.cylc } file print         % print out 120
+{ test_commands.cylc } file print  % print out 0, then 7, then 7 again
+
+
+                                              % testing if statments
+#t { 3 } { 4 } if print                       % print out 3
+#f { #t } { #f } if print                     % print out #f
+#f { 3 4 + } { 3 4 > } if print               % print out #f
+3 4 > { 0 } { #t { 4  5 + } { #t } if } if
+print                                         % print out 9
+
+{ quit }
+exec          % print out quit statment

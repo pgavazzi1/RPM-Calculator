@@ -1,0 +1,16 @@
+%%
+%%
+%%  COMP 15 Pr 1  parser_test
+%%
+%%  testDatumStack.cpp
+%%  Modified By (UTLN): pgavaz01
+%%           On       : 2/14/20
+%%
+%%
+
+{ 3 4 + }                %% Basic R string
+{ }                      %% Empty R string
+{ 1 { 4 2 / } / }        %% Nested, one of the tests from the file
+3 6 +                    %% not an RString, returns nothing
+3 4 { 5 6 + }            %% Should return R String after it
+{ 4 6 { 57 68 + { 5 }    %% not an RString, Brackets do not match up
