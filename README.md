@@ -20,23 +20,13 @@ Compile/run:
 
 
 
-Program Purpose:
-    In this homework assignment, I learned how to built a Stack and used this
-    knowledge to build a DatumStack I used to create a RPN calculator.
-    Also, I learned how to parse RStrings and built a function that can
-    read them in to use later in my RPN Calculator.
 
 
-
-Acknowledgements:
-    I used the vector class from the cpp library. Got my implementation
-    plan checked by TA Sawyer Paccione.
-
-    I used the below site to help use the stoi function (included in the
-    RPNCalc class) to determine when I could convert a string to an int:
+## Acknowledgements:
+I used the below site to help use the stoi function (included in the RPNCalc class) to determine when I could convert a string to an int:
             - http://www.cplusplus.com/reference/string/stoi/
 
-    I used the below site to help brush up on trying and catching exceptions:
+I used the below site to help brush up on trying and catching exceptions:
             - http://www.cplusplus.com/doc/tutorial/exceptions/
 
 
