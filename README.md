@@ -1,12 +1,5 @@
 # RPM-Calculator
-
-/**********************************************************
-* Project 1 (part 2): CalcYouLater
-* Comp 15
-* README
-* By Patrick Gavazzi (pgavaz01)
-*
-*********************************************************/
+COMP 15, By Patrick Gavazzi
 
 ## Compile/run:
 
