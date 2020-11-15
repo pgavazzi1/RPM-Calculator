@@ -72,10 +72,10 @@ For testing RPNCalc, I did two things...
 
 1) There is the testRPNCalc.cpp that runs through some tests with the RPNCalc class. I did not test a lot of the main functions since they are executed when the user inputs a specific query and thoses results can be seen in the .cyl files. All my tests just run through all of the commands and make sure they are working, no user input needed. Outputs a message if the program is not working as expected *note* in order for the test file to compile properly and work, you need to comment out private in RPNCalc.h
 
-2) I provided 4 input files ( and also used one that was provided for us ) to run commands on my test to see if they worked as expected and also to diff against the demo. (*note* these .cyl files contain comments so to get rid of the them, run [filename].cylc) The file names are as follows and a better description of what is contained in each file is provided in the files section of the read me...
+2) I provided 4 input files ( and also used one that was provided for us ) to run commands on my test to see if they worked as expected and also to diff against the demo. (*note* .cyl files contain comments about the tests, run the .cylc files to preform actual test) The file names are as follows and a better description of what is contained in each file is provided in the files section of the read me...
 
-               - fact.cyl
-               - Test_math_commands.cyl
-               - Test_stack_commands.cyl
-               - Test_string_commands.cyl
-               - test_commands.cyl
+               - fact.cylc
+               - Test_math_commands.cylc
+               - Test_stack_commands.cylc
+               - Test_string_commands.cylc
+               - test_commands.cylc
