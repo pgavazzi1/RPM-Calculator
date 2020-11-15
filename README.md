@@ -44,15 +44,15 @@ testRPNCalc.cpp: Contains testing for the RPNCalc class. No user input needed, r
 
 testDatumStack.cpp: Contains testing for the DatumStack class. No user input needed, run program and then read output messages to make sure everything is working correctly.
 
-test_commands.cyl: basic list of commands, used to make sure that my RPNCalc quits after reading in a file or for to easily call in the RString file function.
+test_commands.cylc: basic list of commands, used to make sure that my RPNCalc quits after reading in a file or for to easily call in the RString file function.
 
-fact.cyl: provided for use, computes a factorial as long as it is called in the rstring file function with an int placed before it.
+fact.cylc: provided for use, computes a factorial as long as it is called in the rstring file function with an int placed before it.
 
-Test_string_commands.cyl: list of commands that test the following queries related to strings... adding RStrings to the stack, exec, file, if.
+Test_string_commands.cylc: list of commands that test the following queries related to strings... adding RStrings to the stack, exec, file, if.
 
-Test_stack_commands.cyl: list of commands that test the following queries related to the stack... print, adding numbers to the stack, adding bools to the stack, adding strings to the stack, drop, swap, not, dup.
+Test_stack_commands.cylc: list of commands that test the following queries related to the stack... print, adding numbers to the stack, adding bools to the stack, adding strings to the stack, drop, swap, not, dup.
 
-Test_math_commands.cyl: list of commands that test the following queries related to math... +, -, *, /,  mod, >, <, >=, <=, ==
+Test_math_commands.cylc: list of commands that test the following queries related to math... +, -, *, /,  mod, >, <, >=, <=, ==
 
 
 
@@ -72,10 +72,10 @@ For testing RPNCalc, I did two things...
 
 1) There is the testRPNCalc.cpp that runs through some tests with the RPNCalc class. I did not test a lot of the main functions since they are executed when the user inputs a specific query and thoses results can be seen in the .cyl files. All my tests just run through all of the commands and make sure they are working, no user input needed. Outputs a message if the program is not working as expected *note* in order for the test file to compile properly and work, you need to comment out private in RPNCalc.h
 
-2) I provided 4 input files ( and also used one that was provided for us ) to run commands on my test to see if they worked as expected and also to diff against the demo. *note* these are .cyl files so to get rid of the comments, run .cylc. The file names are as follows and a better description of what is contained in each file is provided in the files section of the read me...
+2) I provided 4 input files ( and also used one that was provided for us ) to run commands on my test to see if they worked as expected and also to diff against the demo. The file names are as follows and a better description of what is contained in each file is provided in the files section of the read me...
 
-               - fact.cyl
-               - Test_math_commands.cyl
-               - Test_stack_commands.cyl
-               - Test_string_commands.cyl
-               - test_commands.cyl
+               - fact.cylc
+               - Test_math_commands.cylc
+               - Test_stack_commands.cylc
+               - Test_string_commands.cylc
+               - test_commands.cylc
